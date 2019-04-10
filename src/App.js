@@ -17,8 +17,8 @@ onNavigation = () => {
     return (
       <div className="d-main">
 
-      <Router>
-        
+      <Router basename="/phone-directory-reactjs">
+        {/* <Router> */}
           <Route path="/add" component ={Add}/>
           <Route path="/" exact={true} component ={Home}/>
       </Router>
@@ -26,5 +26,6 @@ onNavigation = () => {
         );
   }
 }
+{/* <BrowserRouter basename="/phone-directory-reactjs" /> */}
 
 export default App;
